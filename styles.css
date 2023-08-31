@@ -526,6 +526,37 @@ section {
     width: 50%;
   }
 }
+.timeline {
+  border-left: 1px solid hsl(32, 94%, 46%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(37, 87%, 43%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+
+#Resume {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 20px;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -583,34 +614,6 @@ section {
   transition: right 0.3s;
 }
 
-.scards1 {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  justify-content: space-between;
-  gap: 120px;
-}
-
-#ecard {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 200ms ease-in-out !important;
-}
-
-#ecard:hover {
-  transform: scale(0.99);
-}
-
-@media (min-width: 600px) {
-  .scards1 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 900px) {
-  .scards1 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .conatct-div {
   width: 100%;
   border: 10px solid blue;

@@ -509,12 +509,21 @@ section {
   }
 }
 #Python-bar {
-  animation: Python-fill 2s forwards;
+  animation: Python-fill 5s forwards;
 }
 
 @keyframes Python-fill {
   100% {
-    width: 80%;
+    width: 20%;
+  }
+}
+#MySQL-bar {
+  animation: MySQL-fill 5s forwards;
+}
+
+@keyframes MySQL-fill {
+  100% {
+    width: 50%;
   }
 }
 /*--------------------------------------------------------------
